@@ -11,6 +11,9 @@
 		0077EAA129B6BAF900FE81BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077EAA029B6BAF900FE81BB /* ContentView.swift */; };
 		0077EAA329B6BAFB00FE81BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077EAA229B6BAFB00FE81BB /* Assets.xcassets */; };
 		0077EAA629B6BAFB00FE81BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077EAA529B6BAFB00FE81BB /* Preview Assets.xcassets */; };
+		0077EAAD29B6BB0F00FE81BB /* SourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077EAAC29B6BB0F00FE81BB /* SourceData.swift */; };
+		0077EAB229B6BC8A00FE81BB /* GeoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077EAB129B6BC8A00FE81BB /* GeoManager.swift */; };
+		008E55F729B7E1A400725AC2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E55F629B7E1A400725AC2 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		0077EAA029B6BAF900FE81BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0077EAA229B6BAFB00FE81BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0077EAA529B6BAFB00FE81BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0077EAAC29B6BB0F00FE81BB /* SourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceData.swift; sourceTree = "<group>"; };
+		0077EAB129B6BC8A00FE81BB /* GeoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoManager.swift; sourceTree = "<group>"; };
+		008E55F629B7E1A400725AC2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 				0077EAA029B6BAF900FE81BB /* ContentView.swift */,
 				0077EAA229B6BAFB00FE81BB /* Assets.xcassets */,
 				0077EAA429B6BAFB00FE81BB /* Preview Content */,
+				0077EAAC29B6BB0F00FE81BB /* SourceData.swift */,
+				0077EAB129B6BC8A00FE81BB /* GeoManager.swift */,
+				008E55F629B7E1A400725AC2 /* MapView.swift */,
 			);
 			path = GeoMap;
 			sourceTree = "<group>";
@@ -83,6 +92,8 @@
 			dependencies = (
 			);
 			name = GeoMap;
+			packageProductDependencies = (
+			);
 			productName = GeoMap;
 			productReference = 0077EA9B29B6BAF900FE81BB /* GeoMap.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,8 @@
 				Base,
 			);
 			mainGroup = 0077EA9229B6BAF900FE81BB;
+			packageReferences = (
+			);
 			productRefGroup = 0077EA9C29B6BAF900FE81BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0077EAAD29B6BB0F00FE81BB /* SourceData.swift in Sources */,
+				0077EAB229B6BC8A00FE81BB /* GeoManager.swift in Sources */,
+				008E55F729B7E1A400725AC2 /* MapView.swift in Sources */,
 				0077EAA129B6BAF900FE81BB /* ContentView.swift in Sources */,
 				0077EA9F29B6BAF900FE81BB /* GeoMapApp.swift in Sources */,
 			);
