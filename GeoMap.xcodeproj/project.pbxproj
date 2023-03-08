@@ -26,6 +26,7 @@
 		008E55F629B7E1A400725AC2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		008E55F829B81D0C00725AC2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		008E55FA29B81DEB00725AC2 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		008E919429B9534300973845 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A153312D29B809CF00C69AFE /* MapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapState.swift; sourceTree = "<group>"; };
 		A153312F29B80ED600C69AFE /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +45,7 @@
 		0077EA9229B6BAF900FE81BB = {
 			isa = PBXGroup;
 			children = (
+				008E919429B9534300973845 /* README.md */,
 				A153312F29B80ED600C69AFE /* Makefile */,
 				0077EA9D29B6BAF900FE81BB /* GeoMap */,
 				0077EA9C29B6BAF900FE81BB /* Products */,
