@@ -13,7 +13,10 @@ struct MapView: UIViewRepresentable {
     let lineCoordinates: [CLLocationCoordinate2D]
     let pois: [MKAnnotation]?
 
-    init(region: MKCoordinateRegion, lineCoordinates: [CLLocationCoordinate2D], pois: [MKAnnotation]? = nil) {
+    init(region: MKCoordinateRegion,
+         lineCoordinates: [CLLocationCoordinate2D],
+         pois: [MKAnnotation]? = nil)
+    {
         self.region = region
         self.lineCoordinates = lineCoordinates
         self.pois = pois
@@ -24,11 +27,13 @@ struct MapView: UIViewRepresentable {
         mapView.delegate = context.coordinator
         mapView.region = region
 
-        let polyline = MKPolyline(coordinates: lineCoordinates, count: lineCoordinates.count)
+        let polyline = MKPolyline(coordinates: lineCoordinates,
+                                  count: lineCoordinates.count)
         mapView.addOverlay(polyline)
 
         if let annotations = pois {
-            mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(POI.self))
+            mapView.register(MKMarkerAnnotationView.self,
+                             forAnnotationViewWithReuseIdentifier: NSStringFromClass(POI.self))
             mapView.addAnnotations(annotations)
         }
 
@@ -49,11 +54,13 @@ class Coordinator: NSObject, MKMapViewDelegate {
         self.parent = parent
     }
 
-    func mapView(_: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    func mapView(_: MKMapView,
+                 rendererFor overlay: MKOverlay) -> MKOverlayRenderer
+    {
         if let routePolyline = overlay as? MKPolyline {
             let renderer = MKPolylineRenderer(polyline: routePolyline)
             renderer.strokeColor = UIColor.systemRed
-            renderer.lineWidth = 8
+            renderer.lineWidth = 4
             return renderer
         }
         return MKOverlayRenderer()

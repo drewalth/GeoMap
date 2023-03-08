@@ -11,12 +11,10 @@
 		0077EAA129B6BAF900FE81BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077EAA029B6BAF900FE81BB /* ContentView.swift */; };
 		0077EAA329B6BAFB00FE81BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077EAA229B6BAFB00FE81BB /* Assets.xcassets */; };
 		0077EAA629B6BAFB00FE81BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077EAA529B6BAFB00FE81BB /* Preview Assets.xcassets */; };
-		0077EAAD29B6BB0F00FE81BB /* SourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077EAAC29B6BB0F00FE81BB /* SourceData.swift */; };
-		0077EAB229B6BC8A00FE81BB /* GeoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077EAB129B6BC8A00FE81BB /* GeoManager.swift */; };
 		008E55F729B7E1A400725AC2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E55F629B7E1A400725AC2 /* MapView.swift */; };
-		A153312C29B809B000C69AFE /* POIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153312B29B809B000C69AFE /* POIDetailView.swift */; };
+		008E55F929B81D0C00725AC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E55F829B81D0C00725AC2 /* Model.swift */; };
+		008E55FB29B81DEB00725AC2 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E55FA29B81DEB00725AC2 /* MockData.swift */; };
 		A153312E29B809CF00C69AFE /* MapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153312D29B809CF00C69AFE /* MapState.swift */; };
-		A153313029B80ED600C69AFE /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A153312F29B80ED600C69AFE /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +23,9 @@
 		0077EAA029B6BAF900FE81BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0077EAA229B6BAFB00FE81BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0077EAA529B6BAFB00FE81BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0077EAAC29B6BB0F00FE81BB /* SourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceData.swift; sourceTree = "<group>"; };
-		0077EAB129B6BC8A00FE81BB /* GeoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoManager.swift; sourceTree = "<group>"; };
 		008E55F629B7E1A400725AC2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		A153312B29B809B000C69AFE /* POIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailView.swift; sourceTree = "<group>"; };
+		008E55F829B81D0C00725AC2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		008E55FA29B81DEB00725AC2 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		A153312D29B809CF00C69AFE /* MapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapState.swift; sourceTree = "<group>"; };
 		A153312F29B80ED600C69AFE /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,15 +61,14 @@
 		0077EA9D29B6BAF900FE81BB /* GeoMap */ = {
 			isa = PBXGroup;
 			children = (
-				A153312B29B809B000C69AFE /* POIDetailView.swift */,
-				0077EA9E29B6BAF900FE81BB /* GeoMapApp.swift */,
-				0077EAA029B6BAF900FE81BB /* ContentView.swift */,
 				0077EAA229B6BAFB00FE81BB /* Assets.xcassets */,
 				0077EAA429B6BAFB00FE81BB /* Preview Content */,
-				0077EAAC29B6BB0F00FE81BB /* SourceData.swift */,
-				0077EAB129B6BC8A00FE81BB /* GeoManager.swift */,
+				0077EA9E29B6BAF900FE81BB /* GeoMapApp.swift */,
+				0077EAA029B6BAF900FE81BB /* ContentView.swift */,
 				008E55F629B7E1A400725AC2 /* MapView.swift */,
 				A153312D29B809CF00C69AFE /* MapState.swift */,
+				008E55F829B81D0C00725AC2 /* Model.swift */,
+				008E55FA29B81DEB00725AC2 /* MockData.swift */,
 			);
 			path = GeoMap;
 			sourceTree = "<group>";
@@ -95,6 +91,7 @@
 				0077EA9729B6BAF900FE81BB /* Sources */,
 				0077EA9829B6BAF900FE81BB /* Frameworks */,
 				0077EA9929B6BAF900FE81BB /* Resources */,
+				008E560229B83F1400725AC2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -154,19 +151,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		008E560229B83F1400725AC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmake format\nmake lint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0077EA9729B6BAF900FE81BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0077EAAD29B6BB0F00FE81BB /* SourceData.swift in Sources */,
-				0077EAB229B6BC8A00FE81BB /* GeoManager.swift in Sources */,
+				008E55F929B81D0C00725AC2 /* Model.swift in Sources */,
 				008E55F729B7E1A400725AC2 /* MapView.swift in Sources */,
 				0077EAA129B6BAF900FE81BB /* ContentView.swift in Sources */,
-				A153312C29B809B000C69AFE /* POIDetailView.swift in Sources */,
 				0077EA9F29B6BAF900FE81BB /* GeoMapApp.swift in Sources */,
-				A153313029B80ED600C69AFE /* Makefile in Sources */,
 				A153312E29B809CF00C69AFE /* MapState.swift in Sources */,
+				008E55FB29B81DEB00725AC2 /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
