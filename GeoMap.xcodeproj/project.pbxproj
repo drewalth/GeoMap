@@ -14,6 +14,9 @@
 		0077EAAD29B6BB0F00FE81BB /* SourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077EAAC29B6BB0F00FE81BB /* SourceData.swift */; };
 		0077EAB229B6BC8A00FE81BB /* GeoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077EAB129B6BC8A00FE81BB /* GeoManager.swift */; };
 		008E55F729B7E1A400725AC2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008E55F629B7E1A400725AC2 /* MapView.swift */; };
+		A153312C29B809B000C69AFE /* POIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153312B29B809B000C69AFE /* POIDetailView.swift */; };
+		A153312E29B809CF00C69AFE /* MapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153312D29B809CF00C69AFE /* MapState.swift */; };
+		A153313029B80ED600C69AFE /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A153312F29B80ED600C69AFE /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		0077EAAC29B6BB0F00FE81BB /* SourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceData.swift; sourceTree = "<group>"; };
 		0077EAB129B6BC8A00FE81BB /* GeoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoManager.swift; sourceTree = "<group>"; };
 		008E55F629B7E1A400725AC2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A153312B29B809B000C69AFE /* POIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailView.swift; sourceTree = "<group>"; };
+		A153312D29B809CF00C69AFE /* MapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapState.swift; sourceTree = "<group>"; };
+		A153312F29B80ED600C69AFE /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 		0077EA9229B6BAF900FE81BB = {
 			isa = PBXGroup;
 			children = (
+				A153312F29B80ED600C69AFE /* Makefile */,
 				0077EA9D29B6BAF900FE81BB /* GeoMap */,
 				0077EA9C29B6BAF900FE81BB /* Products */,
 			);
@@ -57,6 +64,7 @@
 		0077EA9D29B6BAF900FE81BB /* GeoMap */ = {
 			isa = PBXGroup;
 			children = (
+				A153312B29B809B000C69AFE /* POIDetailView.swift */,
 				0077EA9E29B6BAF900FE81BB /* GeoMapApp.swift */,
 				0077EAA029B6BAF900FE81BB /* ContentView.swift */,
 				0077EAA229B6BAFB00FE81BB /* Assets.xcassets */,
@@ -64,6 +72,7 @@
 				0077EAAC29B6BB0F00FE81BB /* SourceData.swift */,
 				0077EAB129B6BC8A00FE81BB /* GeoManager.swift */,
 				008E55F629B7E1A400725AC2 /* MapView.swift */,
+				A153312D29B809CF00C69AFE /* MapState.swift */,
 			);
 			path = GeoMap;
 			sourceTree = "<group>";
@@ -154,7 +163,10 @@
 				0077EAB229B6BC8A00FE81BB /* GeoManager.swift in Sources */,
 				008E55F729B7E1A400725AC2 /* MapView.swift in Sources */,
 				0077EAA129B6BAF900FE81BB /* ContentView.swift in Sources */,
+				A153312C29B809B000C69AFE /* POIDetailView.swift in Sources */,
 				0077EA9F29B6BAF900FE81BB /* GeoMapApp.swift in Sources */,
+				A153313029B80ED600C69AFE /* Makefile in Sources */,
+				A153312E29B809CF00C69AFE /* MapState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

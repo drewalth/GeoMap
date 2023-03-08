@@ -12,6 +12,10 @@ import os
 struct GeoManager {
     private var logger = Logger()
 
+    func getMapAnnotations(for reachPOIS: [POI]) -> [MKAnnotation] {
+        reachPOIS.filter { $0.rloc != nil }
+    }
+
     func getMapInfo(from geomString: String) -> MapInfo {
         let zoom: CLLocationDistance = 5000 * 2
 
