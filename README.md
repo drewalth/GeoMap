@@ -27,10 +27,10 @@ AW's webapp uses [MapBox](https://www.mapbox.com/) for it's river detail maps an
 
 ### AW
 
-![aw-web-01](/docs/aw-web-01.png)
-![aw-mobile-01](/docs/aw-mobile-01.PNG)
-![aw-mobile-02](/docs/aw-mobile-02.PNG)
-![aw-mobile-03](/docs/aw-mobile-03.PNG)
+<img alt="aw-web-01" height="350" src="/docs/aw-web-01.png" width="auto"/>
+<img alt="aw-mobile-01" height="250" src="/docs/aw-mobile-01.PNG" width="auto"/>
+<img alt="aw-mobile-02" height="250" src="/docs/aw-mobile-02.PNG" width="auto"/>
+<img alt="aw-mobile-03" height="250" src="/docs/aw-mobile-03.PNG" width="auto"/>
 
 ## ToDo
 
