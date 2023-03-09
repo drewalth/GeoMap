@@ -15,7 +15,7 @@ This app uses the data for the [Arkansas River, The Numbers](https://www.america
 
 ### Fill in the Functionality Gaps
 
-AW's webapp uses [MapBox](https://www.mapbox.com/) for it's river detail maps and the mobile app uses MapKit. The webapp draws the river section and adds river features like rapids, as points on the map. The mobile app does neither and are both possible with MapKit.
+AW's webapp uses [MapBox](https://www.mapbox.com/) for it's river detail maps and the mobile app uses MapKit. The webapp draws the river section and adds river features like rapids, as points on the map. As far as I could tell, (didn't look very long), the mobile app does neither and both are possible with MapKit.
 
 ## Comparisons
 
